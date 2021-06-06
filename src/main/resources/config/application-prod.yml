@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: greeting-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+greting-service:
+  greeting: "Implementando"
+  default-value: "Prod"
