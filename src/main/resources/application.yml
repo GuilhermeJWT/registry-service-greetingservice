@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: registry-service-greetingservice
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/GuilhermeJWT/config-server-principal
+          default-label: main
+          search-paths:
+          - 'greeting-service*'
